@@ -11,7 +11,6 @@
 //alphabetical order by last name is easiest
 
 // Riley Blair
+//Nandita Kumar
 // Cole Parks
-// Nandita Kumar
-//
 #endif /* TEAMMEMBERS_H_ */

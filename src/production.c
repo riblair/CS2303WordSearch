@@ -27,7 +27,6 @@ bool production(int argc, char* argv[])
 
 			for(int i = 1; i<argc; i++) //don't want to read argv[0]
 			{//argv[i] is a string
-				//in this program our arguments are a filename followed by the max of rooms, followed by max of treasure
 				switch(i)
 				{
 				case 1:
@@ -53,6 +52,8 @@ bool production(int argc, char* argv[])
 
 		//now that we have our input,
 		//what is to be done:
+		int resultsArray[foundStringLength];
+		substringExtraction(string4Search, resultsArray);
 
 	    for(int i = 0; i<foundStringLength; i++)
 	    {
