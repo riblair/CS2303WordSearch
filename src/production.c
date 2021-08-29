@@ -93,10 +93,15 @@ void substringExtraction(char* whole, int* results)
 	bzero(target, theLength+1);
 	char query[100];
 	bzero(query, 100);
+	int counter = 0;
+	int counter2 = 0;
+	int wordCounterPerLength[strlen(whole)];
+	bzero(wordCounterPerLength,strlen(whole));
 	for(int size = 1; size<=theLength-1; size++)
 	{
 		int howMany = theLength-size+1;
 		printf("There are %d substrings of length %d.\n", howMany, size);
+		wordCounterPerLength[size] = 0;
 		for(int startS = 0; startS<theLength-size+1; startS++)
 		{
 		    //The substrings should be extracted.
@@ -107,6 +112,10 @@ void substringExtraction(char* whole, int* results)
 			{
 				//the user said yes
 				//TODO: add to the results
+				results[counter] = query;
+				counter++;
+				counter2++;
+				wordCounterPerLength[size] = counter2;
 			}
 			else
 			{
@@ -114,6 +123,12 @@ void substringExtraction(char* whole, int* results)
 			}
 
 		}
+		counter2 = 0;
 	}
+	printf("There are a total of %d words! \n", counter);
+	for(int i = 1; i < strlen(whole); i++) {
+		printf("There are %d words of length %d.\n", wordCounterPerLength[i], i);
+	}
+
 }
 
