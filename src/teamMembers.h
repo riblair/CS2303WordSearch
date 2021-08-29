@@ -9,6 +9,9 @@
 #define TEAMMEMBERS_H_
 
 //alphabetical order by last name is easiest
-//
+
+// Riley Blair
+// Cole Parks
+// Nandita Kumar
 //
 #endif /* TEAMMEMBERS_H_ */
