@@ -9,6 +9,6 @@
 #define TEAMMEMBERS_H_
 
 //alphabetical order by last name is easiest
-// Cole Parks
-// Nandita ???
+//
+//
 #endif /* TEAMMEMBERS_H_ */
