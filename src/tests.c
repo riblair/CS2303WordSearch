@@ -27,6 +27,18 @@ bool tests()
 bool testLengthDetermination()
 {
 	bool answer = true; //so far
+	char* whole = "Gita";
+	int x = lengthDetermination(whole);
+	int rightAnswer = 4;
+	if(x == rightAnswer)
+	{
+		puts("testLengthDetermination passed.");
+	}
+	else
+	{
+		puts("testLengthDetermination failed.");
+		answer = false;
+	}
 
 	return answer;
 }

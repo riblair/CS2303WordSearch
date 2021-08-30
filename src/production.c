@@ -133,3 +133,8 @@ void substringExtraction(char* whole, int* results)
 
 }
 
+int lengthDetermination(char* s) { // this func is not complete
+	int result = 0;
+	result = strlen(s);
+	return result;
+}
